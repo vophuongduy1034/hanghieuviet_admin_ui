@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../assets/select2/select2.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="./index.html" class="text-nowrap logo-img">
+              <img src="../assets/images/logos/favicon.png" width="68" alt="" />
+            </a>
+            <div class="close-btn me-3 d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-7"></i>
+            </div>
+          </div>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+            
+            <div class="brand-profile d-flex align-items-center justify-content-between flex-column">
+              <a href="" class="text-nowrap avata-profilemenu ">
+                <img src="../assets/images/profile/avt.png" width="103" alt="" />
+              </a>
+              <div class="info-profilemenu">
+                <p class="name-profilemenu text-center">Đường Minh Thái Tâm</p>
+                <p class="position-profilemenu text-center">Chủ tịch Hội Đồng Quản Trị</p>
+                <a class="edit-profilemenu text-decoration-none" href="" >
+                  <i class="ti ti-pencil-minus"></i>
+                  <span>chỉnh sửa</span>
+                </a>
+              </div>
+            </div>
+            <ul id="sidebarnav">
+              <li class="nav-small-news">
+                <span class="hide-menu">Bài viết</span>
+              </li>
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">Bảng điều khiển</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="" aria-expanded="false">
+                  <span class="hide-menu">Quản lý sản phẩm</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item click-menu1">
+                    <a class="nav-link" href="#" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Cài đặt sản phẩm</p>
+                    </a>
+                    <i class="right fas fa-angle-left"></i>
+                    <ul class=""> 
+                      <li class="nav-item">
+                        <a class="" href="danhmucsanpham.html" title="">               
+                          <p>Danh mục sản phẩm</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_thuonghieu.html" title="">               
+                          <p>Thương hiệu sản phẩm</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_dmmausac.html" title="">               
+                          <p>Danh sách màu sắc</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_dmdonvi.html" title="">               
+                          <p>Danh sách đơn vị</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_dmsize.html" title="">               
+                          <p>Danh sách size</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_search.html" title="">               
+                          <p>Từ khóa tìm kiếm</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sanpham.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Sản phẩm</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="#" aria-expanded="false">
+                  <span class="hide-menu">Quản lý đơn hàng</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="donhang.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Quản lí đơn hàng</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="" aria-expanded="false">
+                  <span class="hide-menu">Quản lí trang</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="ecart.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Quản lí E cart</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Doanh nhân</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Doanh nghiệp</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hinhanh.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Hình ảnh</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="duan.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Dự án</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cohoigiaothuong.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Cơ hội giao thương</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nganhnghekinhdoanh.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Ngành nghề kinh doanh</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tuyendung.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Tuyển dụng</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="" aria-expanded="false">
+                  <span class="hide-menu">Khác</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" title="">
+                      <img src="../assets/images/icon/icon_logout.png" >
+                      <p>Đăng xuất</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" title="">
+                      <img src="../assets/images/icon/icon_infocircle.png" >
+                      <p>Trợ giúp</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!--  Sidebar End -->
+      <!--  Main wrapper -->
+      <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header">
+          <div class="height-header d-flex justify-content-between align-items-center">
+            <div class="breadCrumbs">
+              <ol class="breadcrumb">
+                <li class="nav-item d-block d-xl-none">
+                  <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                    <i class="ti ti-menu-2"></i>
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a class="text-decoration-none" href="">
+                    <span>Trang chủ</span>
+                  </a>
+                </li>
+                <li class="breadcrumb-item active">
+                  <a class="text-decoration-none" href="">
+                    <span>Quản lý đơn hàng</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <div class="view-profileheader">
+              <a class="text-decoration-none" title="" href="">
+                Xem Profile
+              </a>
+            </div>
+          </div>
+          
+        </header>
+        <!--  Header End -->
+        <div class="container-fluid">
+          <!--  Row 1 -->
+          <div class="row">
+            <div class="col-lg-12 d-flex align-items-strech">
+              <div class="pic-main1 w-100">
+                <img class="w-100" src="../assets/images/backgrounds/background1.png">
+                <p class="title-main1">Quản trị website</p>
+                <p class="time-main1">15:58:00 - Thứ 4 ngày 11 tháng 11 năm 2023</p>
+              </div>
+            </div>
+          </div>
+          <!--  Row 2 -->
+          <div class="row pb-lg-4 pt-lg-5 pb-2 pt-3 ">
+            <div class="col-lg-12">
+              <h5 class="card-title fw-bolder">Quản lý đơn hàng</h5>
+            </div>
+          </div>
+    
+          <!-- Row 3-->
+          <div class="tabs-pro-detail">
+            <div class="trol-tabsPruduct">
+              <ul class="nav nav-tabs tabsPruduct" id="tabsProDetail" role="tablist">
+                <li class="nav-item1 pe-4">
+                    <a class="nav-link ps-0 pe-0 active" id="info-pro-detail-tab" data-bs-toggle="tab" href="#all-product" role="tab">Tất cả đơn hàng</a>
+                </li>
+                <li class="nav-item1 pe-4">
+                    <a class="nav-link ps-0 pe-0 title-tab" id="commentfb-pro-detail-tab" data-bs-toggle="tab" href="#notapprovedyet-product" role="tab">Chờ xác nhận <span>(1)</span> </a>
+                </li>
+                <li class="nav-item1 pe-4">
+                  <a class="nav-link ps-0 pe-0 title-tab" id="commentfb-pro-detail-tab" data-bs-toggle="tab" href="#pending-product" role="tab">Chờ lấy hàng <span>(5)</span></a>
+                </li>
+                <li class="nav-item1 pe-4">
+                  <a class="nav-link ps-0 pe-0 title-tab" id="commentfb-pro-detail-tab" data-bs-toggle="tab" href="#pending-product" role="tab">Đang vận chuyển <span>(5)</span></a>
+                </li>
+                <li class="nav-item1 pe-4">
+                  <a class="nav-link ps-0 pe-0 title-tab" id="commentfb-pro-detail-tab" data-bs-toggle="tab" href="#pending-product" role="tab">Hoàn thành <span>(1)</span></a>
+                </li>
+                <li class="nav-item1 pe-4">
+                  <a class="nav-link ps-0 pe-0 title-tab" id="commentfb-pro-detail-tab" data-bs-toggle="tab" href="#pending-product" role="tab">Đơn hủy <span>(1)</span></a>
+                </li> 
+                <li class="nav-item1 pe-4">
+                  <a class="nav-link ps-0 pe-0 title-tab" id="commentfb-pro-detail-tab" data-bs-toggle="tab" href="#pending-product" role="tab">Khách từ chối nhận <span>(1)</span></a>
+                </li>
+                <li class="nav-item1 pe-4">
+                  <a class="nav-link ps-0 pe-0 title-tab" id="commentfb-pro-detail-tab" data-bs-toggle="tab" href="#pending-product" role="tab">Trả hàng hoàn tiền <span>(1)</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content pt-3 pb-3" id="tabsProDetailContent">
+                <div class="tab-pane fade show active" id="all-product" role="tabpanel">
+                  <div class="row">
+                    <div class="col-lg-12 d-flex align-items-stretch">
+                      <div class="card w-100">
+                        <div class="card-body">
+                          <div class="table-responsive">
+                            <table class="table mb-0 align-middle">
+                              <thead class="text-dark fs-4">
+                                <tr style="height: 45px;">
+                                    <th class="align-middle fw-bolder  border-bottom-0 border-right-1 p-0 text-center" width="5.47945205479%" >ID</th>
+                                    <th class="align-middle fw-bolder text-center border-right-1 p-0" style="width:18.2648401826;">Mã đơn</th>
+                                    <th class="align-middle fw-bolder border-right-1 p-0 pe-3 ps-3" width="20.0913242009%">Bên nhận</th>
+                                    <th class="align-middle fw-bolder border-right-1 text-center p-0" width="8.49315068493%">Thuộc kho</th>
+                                    <th class="align-middle fw-bolder border-right-1 p-0 pe-1 ps-1"  width="7.48858447489%">Tổng tiền</th>
+                                    <th class="align-middle fw-bolder border-right-1 text-center p-0" width="12.7853881279%">Mã vận chuyển</th>
+                                    <th class="align-middle fw-bolder border-right-1 pe-1 ps-1  p-0" width="13.698630137%">Đơn vị vận chuyển</th>
+                                    <th class="align-middle fw-bolder text-center p-0" width="13.698630137%">Xác nhận nhanh</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="border-bottom-0"><h6 class="fw-semibold mb-0 text-center">4428</h6></td>
+                                  <td class="border-bottom-0 ">
+                                    <p class="mb-2 nameshop-order ">Cửa hàng: Hưởng Ruby Shop</p>
+                                    <p class="mb-2 code-order">HHV484428</p>  
+                                    <p class="mb-2 status-order">Đã xác nhận</p>
+                                    <p class="statuspay-order mb-0">Nhận hàng thanh toán</p>      
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <p class="mb-2 nameclient-order ">Lê Thị Duyên</p>
+                                    <p class="mb-2 phoneclient-order ">0389303686</p>
+                                    <p class="addressclient-order mb-0">Huyện Tân Yên - Bắc Giang</p>
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <p class="warehouse-order mb-0 text-center">EVA DE AVA</p>
+                                  </td>
+                                  <td class="border-bottom-0 ">
+                                    <p class="info-price mb-0 text-center">120.000 vnđ</p> 
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <p class="code-transport mb-0">19456069145</p> 
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <p class="name-transport mb-0">Viettel Post</p> 
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <a class="text-decoration-none btn-pro btn-delivery d-block" href="">
+                                      Giao hàng
+                                    </a>
+                                  </td>
+                                </tr> 
+                                <tr>
+                                  <td class="border-bottom-0"><h6 class="fw-semibold mb-0 text-center">4428</h6></td>
+                                  <td class="border-bottom-0 ">
+                                    <p class="mb-2 nameshop-order ">Cửa hàng: Hưởng Ruby Shop</p>
+                                    <p class="mb-2 code-order">HHV484428</p>  
+                                    <p class="mb-2 status-order">Đã xác nhận</p>
+                                    <p class="statuspay-order mb-0">Nhận hàng thanh toán</p>      
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <p class="mb-2 nameclient-order ">Lê Thị Duyên</p>
+                                    <p class="mb-2 phoneclient-order ">0389303686</p>
+                                    <p class="addressclient-order mb-0">Huyện Tân Yên - Bắc Giang</p>
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <p class="warehouse-order mb-0 text-center">EVA DE AVA</p>
+                                  </td>
+                                  <td class="border-bottom-0 ">
+                                    <p class="info-price mb-0 text-center">120.000 vnđ</p> 
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <p class="code-transport mb-0">19456069145</p> 
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <p class="name-transport mb-0">Viettel Post</p> 
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <a class="text-decoration-none btn-pro btn-cancelorder d-block" href="">
+                                      Hủy đơn hàng
+                                    </a>
+                                  </td>
+                                </tr>                   
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="notapprovedyet-product" role="tabpanel">
+                  <div class="row">
+                    <div class="col-lg-12 d-flex align-items-stretch">
+                      <div class="card w-100">
+                        <div class="card-body">
+                          <div class="table-responsive">
+                            <table class="table mb-0 align-middle">
+                              <thead class="text-dark fs-4">
+                                <tr style="height: 45px;">
+                                    <th class="align-middle fw-bolder  border-bottom-0 border-right-1 p-0 text-center" width="5.47945205479%" >ID</th>
+                                    <th class="align-middle fw-bolder text-center border-right-1 p-0" style="width:18.2648401826;">Mã đơn</th>
+                                    <th class="align-middle fw-bolder border-right-1 p-0 pe-3 ps-3" width="20.0913242009%">Bên nhận</th>
+                                    <th class="align-middle fw-bolder border-right-1 text-center p-0" width="8.49315068493%">Thuộc kho</th>
+                                    <th class="align-middle fw-bolder border-right-1 p-0 pe-1 ps-1"  width="7.48858447489%">Tổng tiền</th>
+                                    <th class="align-middle fw-bolder border-right-1 text-center p-0" width="12.7853881279%">Mã vận chuyển</th>
+                                    <th class="align-middle fw-bolder border-right-1 pe-1 ps-1  p-0" width="13.698630137%">Đơn vị vận chuyển</th>
+                                    <th class="align-middle fw-bolder text-center p-0" width="13.698630137%">Xác nhận nhanh</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="border-bottom-0"><h6 class="fw-semibold mb-0 text-center">4428</h6></td>
+                                  <td class="border-bottom-0 ">
+                                    <p class="mb-2 nameshop-order ">Cửa hàng: Hưởng Ruby Shop</p>
+                                    <p class="mb-2 code-order">HHV484428</p>  
+                                    <p class="mb-2 status-order">Đã xác nhận</p>
+                                    <p class="statuspay-order mb-0">Nhận hàng thanh toán</p>      
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <p class="mb-2 nameclient-order ">Lê Thị Duyên</p>
+                                    <p class="mb-2 phoneclient-order ">0389303686</p>
+                                    <p class="addressclient-order mb-0">Huyện Tân Yên - Bắc Giang</p>
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <p class="warehouse-order mb-0 text-center">EVA DE AVA</p>
+                                  </td>
+                                  <td class="border-bottom-0 ">
+                                    <p class="info-price mb-0 text-center">120.000 vnđ</p> 
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <p class="code-transport mb-0">19456069145</p> 
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <p class="name-transport mb-0">Viettel Post</p> 
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <a class="text-decoration-none btn-pro btn-delivery d-block" href="">
+                                      Giao hàng
+                                    </a>
+                                  </td>
+                                </tr> 
+                                <tr>
+                                  <td class="border-bottom-0"><h6 class="fw-semibold mb-0 text-center">4428</h6></td>
+                                  <td class="border-bottom-0 ">
+                                    <p class="mb-2 nameshop-order ">Cửa hàng: Hưởng Ruby Shop</p>
+                                    <p class="mb-2 code-order">HHV484428</p>  
+                                    <p class="mb-2 status-order">Đã xác nhận</p>
+                                    <p class="statuspay-order mb-0">Nhận hàng thanh toán</p>      
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <p class="mb-2 nameclient-order ">Lê Thị Duyên</p>
+                                    <p class="mb-2 phoneclient-order ">0389303686</p>
+                                    <p class="addressclient-order mb-0">Huyện Tân Yên - Bắc Giang</p>
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <p class="warehouse-order mb-0 text-center">EVA DE AVA</p>
+                                  </td>
+                                  <td class="border-bottom-0 ">
+                                    <p class="info-price mb-0 text-center">120.000 vnđ</p> 
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <p class="code-transport mb-0">19456069145</p> 
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <p class="name-transport mb-0">Viettel Post</p> 
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <a class="text-decoration-none btn-pro btn-cancelorder d-block" href="">
+                                      Hủy đơn hàng
+                                    </a>
+                                  </td>
+                                </tr>                   
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+                <div class="tab-pane fade" id="pending-product" role="tabpanel">
+                   yyyyy
+                </div>
+            </div>
+          </div>         
+        </div>
+      </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/select2/select2.full.js"></script>
+  <script>
+    /* Select 2 */
+    if ($('.select2').length) {
+      $('.select2').select2();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../assets/select2/select2.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="./index.html" class="text-nowrap logo-img">
+              <img src="../assets/images/logos/favicon.png" width="68" alt="" />
+            </a>
+            <div class="close-btn me-3 d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-7"></i>
+            </div>
+          </div>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+            
+            <div class="brand-profile d-flex align-items-center justify-content-between flex-column">
+              <a href="" class="text-nowrap avata-profilemenu ">
+                <img src="../assets/images/profile/avt.png" width="103" alt="" />
+              </a>
+              <div class="info-profilemenu">
+                <p class="name-profilemenu text-center">Đường Minh Thái Tâm</p>
+                <p class="position-profilemenu text-center">Chủ tịch Hội Đồng Quản Trị</p>
+                <a class="edit-profilemenu text-decoration-none" href="" >
+                  <i class="ti ti-pencil-minus"></i>
+                  <span>chỉnh sửa</span>
+                </a>
+              </div>
+            </div>
+            <ul id="sidebarnav">
+              <li class="nav-small-news">
+                <span class="hide-menu">Bài viết</span>
+              </li>
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">Bảng điều khiển</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="" aria-expanded="false">
+                  <span class="hide-menu">Quản lý sản phẩm</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item click-menu1">
+                    <a class="nav-link" href="#" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Cài đặt sản phẩm</p>
+                    </a>
+                    <i class="right fas fa-angle-left"></i>
+                    <ul class=""> 
+                      <li class="nav-item">
+                        <a class="" href="danhmucsanpham.html" title="">               
+                          <p>Danh mục sản phẩm</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_thuonghieu.html" title="">               
+                          <p>Thương hiệu sản phẩm</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_dmmausac.html" title="">               
+                          <p>Danh sách màu sắc</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_dmdonvi.html" title="">               
+                          <p>Danh sách đơn vị</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_dmsize.html" title="">               
+                          <p>Danh sách size</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_search.html" title="">               
+                          <p>Từ khóa tìm kiếm</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sanpham.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Sản phẩm</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="#" aria-expanded="false">
+                  <span class="hide-menu">Quản lý đơn hàng</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="donhang.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Quản lí đơn hàng</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="" aria-expanded="false">
+                  <span class="hide-menu">Quản lí trang</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="ecart.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Quản lí E cart</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Doanh nhân</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Doanh nghiệp</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hinhanh.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Hình ảnh</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="duan.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Dự án</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cohoigiaothuong.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Cơ hội giao thương</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nganhnghekinhdoanh.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Ngành nghề kinh doanh</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tuyendung.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Tuyển dụng</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="" aria-expanded="false">
+                  <span class="hide-menu">Khác</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" title="">
+                      <img src="../assets/images/icon/icon_logout.png" >
+                      <p>Đăng xuất</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" title="">
+                      <img src="../assets/images/icon/icon_infocircle.png" >
+                      <p>Trợ giúp</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!--  Sidebar End -->
+      <!--  Main wrapper -->
+      <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header">
+          <div class="height-header d-flex justify-content-between align-items-center">
+            <div class="breadCrumbs">
+              <ol class="breadcrumb">
+                <li class="nav-item d-block d-xl-none">
+                  <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                    <i class="ti ti-menu-2"></i>
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a class="text-decoration-none" href="">
+                    <span>Trang chủ</span>
+                  </a>
+                </li>
+                <li class="breadcrumb-item active">
+                  <a class="text-decoration-none" href="">
+                    <span>Quản lí E cart</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <div class="view-profileheader">
+              <a class="text-decoration-none" title="" href="">
+                Xem Profile
+              </a>
+            </div>
+          </div>
+          
+        </header>
+        <!--  Header End -->
+        <div class="container-fluid">
+          <!--  Row 1 -->
+          <div class="row">
+            <div class="col-lg-12 d-flex align-items-strech">
+              <div class="pic-main1 w-100">
+                <img class="w-100" src="../assets/images/backgrounds/background1.png">
+                <p class="title-main1">Quản trị website</p>
+                <p class="time-main1">15:58:00 - Thứ 4 ngày 11 tháng 11 năm 2023</p>
+              </div>
+            </div>
+          </div>    
+          <!-- Row 2-->
+         <div class="wrap-demo-ecart mt-3 mb-4" >
+          <div class="d-flex flex-wrap justify-content-between align-items-end">
+            <div class="left-ecartdemo">
+              <div class="box-ecartdemo">
+                <div class="d-flex justify-content-between">
+                  <div class="avata-ecartdemo">
+                    <img src="../assets/images/ecart/Avata.png" width="107px">
+                  </div>
+                  <div class="item-info-ecartdemo">
+                    <p class="name-ecartdemo mb-0">Đường Minh Thái Tâm</p>
+                    <p class="position-ecartdemo mb-0">Chủ tịch Hội Đồng Quản Trị</p>
+                    <p class="company-ecartdemo mb-0">Công ty CP Công Nghệ & Thời Trang Tâm An</p>
+                  </div>
+                  <div class="logo-ecartdemo">
+                    <img src="../assets/images/ecart/logo.png" width="68px">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-2 mt-lg-5">
+                  <div class="info-ecartdemo">
+                    <p class="address-ecartdemo mb-0"><i class="ti ti-map-pin"></i> 135 Đội Cấn, Quận Ba Đình, Thủ Đô Hà Nội</p>
+                    <p class="email-ecartdemo mb-0"><i class="ti ti-mail"></i> hanghieuviet@gmail.com</p>
+                    <p class="phone-ecartdemo mb-0"><i class="ti ti-phone-call"></i> +(84) 096 448 8883</p>
+                  </div>
+                  <div class="code-ecartdemo">
+                    <img src="../assets/images/ecart/zalo.png">
+                    <p class="mb-0 id-ecart">ID: <span>123456789</span> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-ecartdemo">
+              <a class="text-decoration-none download-ecartdemo"><i class="ti ti-download"></i>Tải xuống mã QR</a>
+            </div>
+          </div>
+         </div>   
+         <!-- Row 3 -->
+         <div class="wrap-info-ecart mb-4">
+          <div class="d-flex flex-wrap justify-content-between">
+            <div class="left-infoecart">
+              <div class="d-flex justify-content-between">
+                <div class="title-infoecart">Cập nhật ảnh đại diện</div>
+                <div class="add-infoecart photoUpload-zone">
+                  <label class="photoUpload-infoecart" id="photo-zone" for="file-zone">
+                    <input type="file" name="file" id="file-zone">
+                    <p class="icon_photoUpload">
+                      <i class="ti ti-plus"></i>
+                      Tải ảnh lên
+                    </p>
+                  </label>
+                </div>  
+              </div>
+              <div class="photoup-infoecart">
+                <img src="../assets/images/ecart/Avataup.png" width="100px">
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="title-infoecart">Cập nhật logo</div>
+                <div class="add-infoecart photoUpload-zone">
+                  <label class="photoUpload-infoecart" id="photo-zone" for="file-zone">
+                    <input type="file" name="file" id="file-zone">
+                    <p class="icon_photoUpload">
+                      <i class="ti ti-plus"></i>
+                      Tải ảnh lên
+                    </p>
+                  </label>
+                </div>  
+              </div>
+              <div class="photoup-infoecart">
+                <img src="../assets/images/ecart/logoup.png" width="100px">
+              </div>
+            </div>
+            <div class="right-infoecart">
+              <form class="validation-form " novalidate method="post" action="" enctype="multipart/form-data">
+                <div class="title-infoecart pb-2">Thông tin cơ bản</div>
+                <div class="form-group flex-wrap d-flex justify-content-between align-items-center py-1 py-lg-2">
+                  <label class="title_main3 mb-1 mb-lg-0" for="">Họ và tên:</label>
+                  <input type="text" class="form-control  text-sm" name="" id="" placeholder="" value="" required>
+                </div>
+                <div class="form-group flex-wrap d-flex justify-content-between align-items-center py-1 py-lg-2">
+                  <label class="title_main3 mb-1 mb-lg-0" for="">Chức vụ:</label>
+                  <input type="text" class="form-control  text-sm" name="" id="" placeholder="" value="" required>
+                </div>
+                <div class="form-group flex-wrap d-flex justify-content-between align-items-center py-1 py-lg-2">
+                  <label class="title_main3 mb-1 mb-lg-0" for="">Email:</label>
+                  <input type="text" class="form-control  text-sm" name="" id="" placeholder="" value="" required>
+                </div>
+                <div class="form-group flex-wrap d-flex justify-content-between align-items-center py-1 py-lg-2">
+                  <label class="title_main3 mb-1 mb-lg-0" for="">Số điện thoại:</label>
+                  <input type="text" class="form-control  text-sm" name="" id="" placeholder="" value="" required>
+                </div>
+                <div class="form-group flex-wrap d-flex justify-content-between align-items-center py-1 py-lg-2">
+                  <label class="title_main3 mb-1 mb-lg-0" for="">Địa chỉ:</label>
+                  <input type="text" class="form-control  text-sm" name="" id="" placeholder="" value="" required>
+                </div>
+                <div class="form-group flex-wrap d-flex justify-content-end align-items-center pb-2 mt-2">
+                  <input type="submit" class="btn-submit btn  btn-primary  " name="" value="Lưu thay đổi" disabled />
+                </div>
+              </form>
+            </div>
+          </div>
+         </div>
+         <!-- Row 4 -->
+         <div class="wrap-templatemore pb-4">
+          <div class="d-flex flex-wrap justify-content-between">
+            <div class="left-templatemore"><h5 class="card-title fw-bolder">Sử dụng mẫu khác</h5></div>
+            <div class="right-templatemore">
+              <div class="d-flex flex-wrap justify-content-between">
+                <div class="input-category1">
+                  <select id="" name="" onchange="" class="form-control filter-category select2">
+                    <option value="0">Chọn ngành nghề</option>
+                    <option value=''>Áo nam</option>
+                    <option value=''>Áo nữ</option>
+                  </select>
+                </div>
+                <div class="input-category1">
+                  <select id="" name="" onchange="" class="form-control filter-category select2">
+                    <option value="0">Chọn màu sắc</option>
+                    <option value=''>Áo nam</option>
+                    <option value=''>Áo nữ</option>
+                  </select>
+                </div>
+                <div class="button-searchadmin1">
+                  <button type="submit" class="btn btn-sm bg-gradient-primary submit-check" disabled>Lọc</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 d-flex justify-content-start flex-wrap flex-templatemore">
+            <div class="item-templatemore">
+              <a class="text-decoration-none">
+                <img src="../assets/images/ecart/mau1.png">
+                <p class="name-templatemore">Mẫu 1</p>
+              </a>
+            </div>
+            <div class="item-templatemore">
+              <a class="text-decoration-none">
+                <img src="../assets/images/ecart/mau2.png">
+                <p class="name-templatemore">Mẫu 2</p>
+              </a>
+            </div>
+            <div class="item-templatemore">
+              <a class="text-decoration-none">
+                <img src="../assets/images/ecart/mau1.png">
+                <p class="name-templatemore">Mẫu 3</p>
+              </a>
+            </div>
+            <div class="item-templatemore">
+              <a class="text-decoration-none">
+                <img src="../assets/images/ecart/mau1.png">
+                <p class="name-templatemore">Mẫu 4</p>
+              </a>
+            </div>
+            <div class="item-templatemore">
+              <a class="text-decoration-none">
+                <img src="../assets/images/ecart/mau1.png">
+                <p class="name-templatemore">Mẫu 5</p>
+              </a>
+            </div>
+            <div class="item-templatemore">
+              <a class="text-decoration-none">
+                <img src="../assets/images/ecart/mau1.png">
+                <p class="name-templatemore">Mẫu 6</p>
+              </a>
+            </div>
+            <div class="item-templatemore">
+              <a class="text-decoration-none">
+                <img src="../assets/images/ecart/mau1.png">
+                <p class="name-templatemore">Mẫu 7</p>
+              </a>
+            </div>
+          </div>  
+         </div>
+        </div>
+      </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/select2/select2.full.js"></script>
+  <script>
+    /* Select 2 */
+    if ($('.select2').length) {
+      $('.select2').select2();
+    }
+  </script>
+</body>
+</html>

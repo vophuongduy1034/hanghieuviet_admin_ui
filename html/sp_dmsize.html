@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/select2/select2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="./index.html" class="text-nowrap logo-img">
+              <img src="../assets/images/logos/favicon.png" width="68" alt="" />
+            </a>
+            <div class="close-btn me-3 d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-7"></i>
+            </div>
+          </div>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+            
+            <div class="brand-profile d-flex align-items-center justify-content-between flex-column">
+              <a href="" class="text-nowrap avata-profilemenu ">
+                <img src="../assets/images/profile/avt.png" width="103" alt="" />
+              </a>
+              <div class="info-profilemenu">
+                <p class="name-profilemenu text-center">Đường Minh Thái Tâm</p>
+                <p class="position-profilemenu text-center">Chủ tịch Hội Đồng Quản Trị</p>
+                <a class="edit-profilemenu text-decoration-none" href="" >
+                  <i class="ti ti-pencil-minus"></i>
+                  <span>chỉnh sửa</span>
+                </a>
+              </div>
+            </div>
+            <ul id="sidebarnav">
+              <li class="nav-small-news">
+                <span class="hide-menu">Bài viết</span>
+              </li>
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">Bảng điều khiển</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="" aria-expanded="false">
+                  <span class="hide-menu">Quản lý sản phẩm</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item click-menu1">
+                    <a class="nav-link" href="#" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Cài đặt sản phẩm</p>
+                    </a>
+                    <i class="right fas fa-angle-left"></i>
+                    <ul class=""> 
+                      <li class="nav-item">
+                        <a class="" href="danhmucsanpham.html" title="">               
+                          <p>Danh mục sản phẩm</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_thuonghieu.html" title="">               
+                          <p>Thương hiệu sản phẩm</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_dmmausac.html" title="">               
+                          <p>Danh sách màu sắc</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_dmdonvi.html" title="">               
+                          <p>Danh sách đơn vị</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_dmsize.html" title="">               
+                          <p>Danh sách size</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="" href="sp_search.html" title="">               
+                          <p>Từ khóa tìm kiếm</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sanpham.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Sản phẩm</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="#" aria-expanded="false">
+                  <span class="hide-menu">Quản lý đơn hàng</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="donhang.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Quản lí đơn hàng</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="" aria-expanded="false">
+                  <span class="hide-menu">Quản lí trang</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="ecart.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Quản lí E cart</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Doanh nhân</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Doanh nghiệp</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hinhanh.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Hình ảnh</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="duan.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Dự án</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cohoigiaothuong.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Cơ hội giao thương</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nganhnghekinhdoanh.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Ngành nghề kinh doanh</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tuyendung.html" title="">
+                      <img src="../assets/images/icon/icon_dm.png" >
+                      <p>Tuyển dụng</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="" aria-expanded="false">
+                  <span class="hide-menu">Khác</span>
+                </a>
+                <ul class="nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" title="">
+                      <img src="../assets/images/icon/icon_logout.png" >
+                      <p>Đăng xuất</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" title="">
+                      <img src="../assets/images/icon/icon_infocircle.png" >
+                      <p>Trợ giúp</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!--  Sidebar End -->
+      <!--  Main wrapper -->
+      <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header">
+          <div class="height-header d-flex justify-content-between align-items-center">
+            <div class="breadCrumbs">
+              <ol class="breadcrumb">
+                <li class="nav-item d-block d-xl-none">
+                  <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                    <i class="ti ti-menu-2"></i>
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a class="text-decoration-none" href="">
+                    <span>Trang chủ</span>
+                  </a>
+                </li>
+                <li class="breadcrumb-item ">
+                  <a class="text-decoration-none" href="">
+                    <span>Quản lý sản phẩm</span>
+                  </a>
+                </li>
+                <li class="breadcrumb-item active">
+                  <a class="text-decoration-none" href="">
+                    <span>Danh sách size</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <div class="view-profileheader">
+              <a class="text-decoration-none" title="" href="">
+                Xem Profile
+              </a>
+            </div>
+          </div>
+          
+        </header>
+        <!--  Header End -->
+        <div class="container-fluid">
+          <!--  Row 1 -->
+          <div class="row">
+            <div class="col-lg-12 d-flex align-items-strech">
+              <div class="pic-main1 w-100">
+                <img class="w-100" src="../assets/images/backgrounds/background1.png">
+                <p class="title-main1">Quản trị website</p>
+                <p class="time-main1">15:58:00 - Thứ 4 ngày 11 tháng 11 năm 2023</p>
+              </div>
+            </div>
+          </div>
+          <!--  Row 2 -->
+          <div class="row pb-2 pt-2 pb-sm-4 pt-sm-4 pb-lg-4 pt-lg-4">
+            <div class="col-lg-10">
+              <h5 class="card-title fw-bolder">Danh sách size</h5>
+            </div>
+            <div class="col-lg-2">
+              <a class="text-decoration-none fw-bolder add-dm" href="">
+                <i class="ti ti-plus"></i>
+                Tạo size mới
+              </a>
+            </div>
+          </div>
+          <!--  Row 3 -->
+            <form class="validation-form " novalidate method="post" action="" enctype="multipart/form-data">
+              <div class="content">
+                <h2 class="pb-2">Tạo bảng quy đổi kích cỡ</h2>
+                <div class="row  py-2">
+                  <div class="col-lg-6 mb-2 mb-lg-0"> 
+                    <label class="title_main3 mb-1" for="">Nhóm sản phẩm:</label>
+                    <select id="" name="" onchange="" class="form-control filter-category select2">
+                      <option value="0">Chọn nhóm sản phẩm</option>
+                      <option value=''>Áo nam</option>
+                      <option value=''>Áo nữ</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 input-admin"> 
+                    <label class="title_main3 mb-1" for="">Tên bảng quy đổi kích cỡ:</label>
+                    <input type="text " class="form-control form-control-navbar text-sm" name="" id="" placeholder="" value="" required>
+                  </div>
+                </div>
+                <div class="info-size1 mt-3">
+                  <p class="mb-2">* Thiết lập thông số size</p>
+                  <div class="d-flex justify-content-start flex-wrap">
+                    <div  class="d-flex justify-content-start me-3 mb-2 mb-lg-0 align-items-center ">
+                      <input type="checkbox" class="custom-control-input me-2 show-checkbox ">
+                      <label for="" class="custom-control-label">Size ( Tuổi )</label>
+                    </div>
+                    <div class="d-flex justify-content-start me-3 align-items-center ">
+                      <input type="checkbox" class="custom-control-input me-2 show-checkbox ">
+                      <label for="" class="custom-control-label">Size ( Chiều Cao )</label>
+                    </div>
+                    <div class="d-flex justify-content-start me-3 align-items-center ">
+                      <input type="checkbox" class="custom-control-input me-2 show-checkbox ">
+                      <label for="" class="custom-control-label">Size ( Quốc Tế )</label>
+                    </div>
+                  </div>
+                  <p class="mt-4 mb-2 ">* Thiết lập thông số khác</p>
+                  <div class="d-flex justify-content-start">
+                    <div class="d-flex justify-content-start align-items-center ">
+                      <input type="checkbox" class="custom-control-input me-2 show-checkbox ">
+                      <label for="" class="custom-control-label">Chiều rộng</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p class="mb-2 mt-3">Đơn vị đo</p>
+                    <select id="" name="" onchange="" class="form-control filter-category select2">
+                      <option value="0">Chọn đơn vị</option>
+                      <option value=''>cm</option>
+                      <option value=''>in</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="info-size2 mt-4">
+                  <div class="row">
+                    <div class="col-lg-12 d-flex align-items-stretch">
+                      <div class="w-100">
+                        <div class="card-body">
+                          <div class="box-table">
+                            <div class="table-responsive">
+                              <table class="table  mb-0 align-middle">
+                                <thead class="text-dark fs-4">
+                                  <tr>
+                                    <th class="border-bottom-0 border-right-1" style="width:14.7695202258%;" >
+                                      <h6 class="fw-bolder mb-0 text-center">Size ( Tuổi )</h6>
+                                    </th>
+                                    <th class="border-bottom-0 border-right-1" style="width:25.8701787394%;">
+                                      <h6 class="fw-bolder mb-0 text-center">Size ( Chiều Cao )</h6>
+                                    </th>
+                                    <th class="border-bottom-0 border-right-1" style="width: 25.8701787394%;">
+                                      <h6 class="fw-bolder mb-0 text-center">Size ( Quốc Tế )</h6>
+                                    </th>
+                                    <th class="border-bottom-0 border-right-1" style="width: 25.8701787394%;">
+                                      <h6 class="fw-bolder mb-0 text-center">Size ( Chiều rộng )</h6>
+                                    </th>
+                                    <th class="border-bottom-0" style="width: 7.52587017874%;">
+                                      <h6 class="fw-bolder mb-0 text-center">Thao tác</h6>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr style="height: 72px;">
+                                    <td class="border-bottom-0"> 
+                                      <select id="" name="" onchange="" class="form-control1 filter-category">
+                                        <option value='0'>3 tuổi</option>
+                                        <option value=''>2 tuổi</option>
+                                      </select>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                      <select id="" name="" onchange="" class="form-control1 filter-category">
+                                        <option value="0">80cm </option>
+                                        <option value=''>60cm</option>
+                                        <option value=''>70cm</option>
+                                      </select>   
+                                    </td>
+                                    <td class="border-bottom-0 text-center">
+                                      <select id="" name="" onchange="" class="form-control1 filter-category">
+                                        <option value="0">M </option>
+                                        <option value=''>S</option>
+                                        <option value=''>L</option>
+                                      </select>
+                                    </td>
+                                    <td class="border-bottom-0 text-center">
+                                      <select id="" name="" onchange="" class="form-control1 filter-category">
+                                        <option value="0">53 </option>
+                                        <option value=''>54</option>
+                                        <option value=''>55</option>
+                                      </select>
+                                    </td>
+                                    <td class="border-bottom-0 text-center">
+                                      <div class="icon_thaotac d-flex justify-content-between">
+                                        <a class="" href=""><i class="ti ti-arrow-narrow-up"></i></a>
+                                        <a class="" href=""><i class="ti ti-arrow-narrow-down"></i></a>
+                                        <a class="" href=""><i class="ti ti-trash"></i></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr style="height: 72px;">
+                                    <td class="border-bottom-0"> 
+                                      <select id="" name="" onchange="" class="form-control1 filter-category ">
+                                        <option value="0">Chọn tuổi </option>
+                                        <option value=''>3 tuổi</option>
+                                        <option value=''>2 tuổi</option>
+                                      </select>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                      <select id="" name="" onchange="" class="form-control1 filter-category">
+                                        <option value="0">Chọn tuổi </option>
+                                        <option value=''>3 tuổi</option>
+                                        <option value=''>2 tuổi</option>
+                                      </select>   
+                                    </td>
+                                    <td class="border-bottom-0 text-center">
+                                      <select id="" name="" onchange="" class="form-control1 filter-category">
+                                        <option value="0">Chọn tuổi </option>
+                                        <option value=''>3 tuổi</option>
+                                        <option value=''>2 tuổi</option>
+                                      </select>
+                                    </td>
+                                    <td class="border-bottom-0 text-center">
+                                      <select id="" name="" onchange="" class="form-control1 filter-category">
+                                        <option value="0">Chọn tuổi </option>
+                                        <option value=''>3 tuổi</option>
+                                        <option value=''>2 tuổi</option>
+                                      </select>
+                                    </td>
+                                    <td class="border-bottom-0 text-center">
+                                      <div class="icon_thaotac d-flex justify-content-between">
+                                        <a class="" href=""><i class="ti ti-arrow-narrow-up"></i></a>
+                                        <a class="" href=""><i class="ti ti-arrow-narrow-down"></i></a>
+                                        <a class="" href=""><i class="ti ti-trash"></i></a>
+                                      </div>
+                                    </td>
+                                  </tr>   
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                              <a class="text-decoration-none add-rowsize " href="#"><i class="ti ti-plus"></i>Thêm dòng</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content mt-4">
+                <div class="row">
+                  <div class="col-lg-10">
+                    <h2 class="pb-2">Sản phẩm đã liên kết</h2>
+                  </div>
+                  <div class="col-lg-2">
+                    <a class="text-decoration-none fw-bolder add-productsize" href="">
+                      <i class="ti ti-plus"></i>
+                      Thêm sản phẩm
+                    </a>
+                  </div>
+                </div>
+                <div class="row  py-2">
+                  <div class="col-lg-6 mb-2 mb-lg-0"> 
+                    <label class="title_main3 mb-1" for="">Nhóm sản phẩm:</label>
+                    <select id="" name="" onchange="" class="form-control filter-category select2">
+                      <option value="0">Chọn nhóm sản phẩm</option>
+                      <option value=''>Áo nam</option>
+                      <option value=''>Áo nữ</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 input-admin"> 
+                    <label class="title_main3 mb-1" for="">Tên bảng quy đổi kích cỡ:</label>
+                    <input type="text " class="form-control form-control-navbar text-sm" name="" id="" placeholder="" value="" required>
+                  </div>
+                </div>
+                <div class="info-size1 mt-3">
+                  <p class="mb-2">* Thiết lập thông số size</p>
+                  <div class="d-flex justify-content-start flex-wrap">
+                    <div  class="d-flex justify-content-start me-3  mb-2 mb-lg-0 align-items-center ">
+                      <input type="checkbox" class="custom-control-input me-2 show-checkbox ">
+                      <label for="" class="custom-control-label">Size ( Tuổi )</label>
+                    </div>
+                    <div class="d-flex justify-content-start me-3 align-items-center ">
+                      <input type="checkbox" class="custom-control-input me-2 show-checkbox ">
+                      <label for="" class="custom-control-label">Size ( Chiều Cao )</label>
+                    </div>
+                    <div class="d-flex justify-content-start me-3 align-items-center ">
+                      <input type="checkbox" class="custom-control-input me-2 show-checkbox ">
+                      <label for="" class="custom-control-label">Size ( Quốc Tế )</label>
+                    </div>
+                  </div>
+                  <p class="mt-4 mb-2 ">* Thiết lập thông số khác</p>
+                  <div class="d-flex justify-content-start">
+                    <div class="d-flex justify-content-start align-items-center ">
+                      <input type="checkbox" class="custom-control-input me-2 show-checkbox ">
+                      <label for="" class="custom-control-label">Chiều rộng</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p class="mb-2 mt-3">Đơn vị đo</p>
+                    <select id="" name="" onchange="" class="form-control filter-category select2">
+                      <option value="0">Chọn đơn vị</option>
+                      <option value=''>cm</option>
+                      <option value=''>in</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="info-size2 mt-4">
+                  <div class="row">
+                    <div class="col-lg-12 d-flex align-items-stretch">
+                      <div class="w-100">
+                        <div class="card-body">
+                          <div class="table-responsive">
+                            <table class="table  mb-0 align-middle">
+                              <thead class="text-dark fs-4">
+                                <tr>
+                                  <th class="border-bottom-0 border-right-1" style="width:27.2812793979%;" >
+                                    <h6 class="fw-bolder mb-0 text-center">Sản phẩm</h6>
+                                  </th>
+                                  <th class="border-bottom-0 border-right-1" style="width:32%;">
+                                    <h6 class="fw-bolder mb-0 text-center">Ngành hàng</h6>
+                                  </th>
+                                  <th class="border-bottom-0 border-right-1" style="width: 32%;">
+                                    <h6 class="fw-bolder mb-0 text-center">Doanh số</h6>
+                                  </th>
+                                  <th class="border-bottom-0" style="width: 10.52587017874%;">
+                                    <h6 class="fw-bolder mb-0 text-center">Thao tác</h6>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr style="height: 72px;">
+                                  <td class="border-bottom-0 d-flex justify-content-start align-items-center" > 
+                                    <a href="" title="" class="me-2 ">
+                                      <img src="../assets/images/products/sp.png" width="50px" >
+                                    </a>
+                                    <h6 class=" mb-1 text-split2">1 chiếc khăn quàng cổ mùa đông mới đến, khăn quàng cổ dày phong cách Hàn Quốc dành ....</h6>   
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <select id="" name="" onchange="" class="form-control1 filter-category">
+                                      <option value="0">Thời trang</option>
+                                      <option value=''>60cm</option>
+                                      <option value=''>70cm</option>
+                                    </select>   
+                                  </td>
+                                  <td class="border-bottom-0 ">
+                                    <h6 class="fw-semibold mb-1">32.000.000 vnđ</h6>      
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <div class="icon_thaotac d-flex justify-content-between">
+                                      <a class="" href=""><i class="ti ti-arrow-narrow-up"></i></a>
+                                      <a class="" href=""><i class="ti ti-arrow-narrow-down"></i></a>
+                                      <a class="" href=""><i class="ti ti-trash"></i></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr style="height: 72px;">
+                                  <td class="border-bottom-0 d-flex justify-content-start align-items-center"> 
+                                    <a href="" title="" class="me-2">
+                                      <img src="../assets/images/products/sp.png" width="50px" >
+                                    </a>
+                                    <h6 class=" mb-1 text-split2">1 chiếc khăn quàng cổ mùa đông mới đến, khăn quàng cổ dày phong cách Hàn Quốc dành ....</h6>   
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <select id="" name="" onchange="" class="form-control1 filter-category">
+                                      <option value="0">Thời trang</option>
+                                      <option value=''>60cm</option>
+                                      <option value=''>70cm</option>
+                                    </select>   
+                                  </td>
+                                  <td class="border-bottom-0">
+                                    <h6 class="fw-semibold mb-1">32.000.000 vnđ</h6>      
+                                  </td>
+                                  <td class="border-bottom-0 text-center">
+                                    <div class="icon_thaotac d-flex justify-content-between">
+                                      <a class="" href=""><i class="ti ti-arrow-narrow-up"></i></a>
+                                      <a class="" href=""><i class="ti ti-arrow-narrow-down"></i></a>
+                                      <a class="" href=""><i class="ti ti-trash"></i></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group d-flex flex-wrap justify-content-end align-items-start pb-5 mt-3 ">
+                <label class="title_main2" for=""></label>
+                <input type="submit" class="btn-submit-huy me-2 btn  btn-primary " name="" value="Hủy" disabled />
+                <input type="submit" class="btn-submit-luuan me-2 btn  btn-primary " name="" value="Lưu & ẩn" disabled />
+                <input type="submit" class="btn-submit btn  btn-primary " name="" value="Lưu & hiển thị" disabled />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/select2/select2.full.js"></script>
+  <script>
+    /* Select 2 */
+    if ($('.select2').length) {
+      $('.select2').select2();
+    }
+  </script>
+</body>
+</html>
